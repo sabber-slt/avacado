@@ -5,9 +5,9 @@
             ],
             "target": {
                   "namespace": "android_app",
-                  "package_name": "com.avacadogroup.twa",
+                  "package_name": "com.avacadogroup.www.twa",
                   "sha256_cert_fingerprints": [
-                        "72:57:54:F2:6F:E5:C7:68:D4:06:EF:E7:E0:68:C4:FE:0B:6C:47:7B:2D:7F:50:82:94:65:70:1D:6D:9F:28:B4"
+                        "64:AB:C7:F5:8C:83:04:6B:F2:0A:50:2D:EA:53:30:5C:41:DB:5E:13:25:B6:F6:8F:91:15:EF:18:F8:50:73:F9"
                   ]
             }
       }
