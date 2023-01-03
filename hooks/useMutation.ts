@@ -41,6 +41,7 @@ export const registerMutation = async (items: FormData) => {
     }),
   });
   const { data } = await response.json();
+  console.log(data);
   return data;
 };
 export const loginMutation = async (phone: string) => {
