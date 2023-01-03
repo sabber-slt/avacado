@@ -1,0 +1,14 @@
+[
+      {
+            "relation": [
+                  "delegate_permission/common.handle_all_urls"
+            ],
+            "target": {
+                  "namespace": "android_app",
+                  "package_name": "com.avacadogroup.twa",
+                  "sha256_cert_fingerprints": [
+                        "72:57:54:F2:6F:E5:C7:68:D4:06:EF:E7:E0:68:C4:FE:0B:6C:47:7B:2D:7F:50:82:94:65:70:1D:6D:9F:28:B4"
+                  ]
+            }
+      }
+]
