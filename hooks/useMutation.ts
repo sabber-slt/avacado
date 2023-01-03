@@ -3,7 +3,7 @@ import { FormData } from '../pages/register';
 export const API = 'https://sabbersoltani.hasura.app/v1/graphql';
 
 export const registerMutation = async (items: FormData) => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ export const registerMutation = async (items: FormData) => {
   return data;
 };
 export const loginMutation = async (phone: string) => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ export const loginMutation = async (phone: string) => {
   return data.users;
 };
 export const fetchMessages = async (receiver: number) => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -105,7 +105,7 @@ export const fetchMessages = async (receiver: number) => {
   return data.user_messages;
 };
 export const deleteLikes = async (user_id: number) => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -130,7 +130,7 @@ export const deleteLikes = async (user_id: number) => {
   return data;
 };
 export const addLikes = async (user_id: number, post_id: number) => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -156,7 +156,7 @@ export const addLikes = async (user_id: number, post_id: number) => {
   return data;
 };
 export const searchMutation = async (name: string) => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

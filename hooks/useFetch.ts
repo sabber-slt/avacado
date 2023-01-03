@@ -15,7 +15,7 @@ export const fetchMagazine = async () => {
   }
   
   `;
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ export const fetchMagazine = async () => {
 };
 
 export const fetchPosts = async (id: number) => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ export const fetchPosts = async (id: number) => {
 };
 
 export const fetchChat = async (userId: number) => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -91,7 +91,7 @@ export const fetchChat = async (userId: number) => {
 };
 
 export const searchMutation = async (name: string) => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -124,7 +124,7 @@ export const searchMutation = async (name: string) => {
 };
 
 export const fetchPublicPosts = async () => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -165,7 +165,7 @@ export const fetchCategories = async () => {
     }
   }  
   `;
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -180,7 +180,7 @@ export const fetchCategories = async () => {
 };
 
 export const fetchCategoriesByType = async (slug: string) => {
-  const request = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const request = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -225,7 +225,7 @@ export const fetchWorkout = async () => {
   }
   
   `;
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -240,7 +240,7 @@ export const fetchWorkout = async () => {
 };
 
 export const fetchCook = async () => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -266,7 +266,7 @@ export const fetchCook = async () => {
 };
 
 export const userProfile = async (id: number) => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -303,7 +303,7 @@ export const userProfile = async (id: number) => {
 };
 
 export const fetchLikes = async (post_id: number) => {
-  const response = await fetch("http://nolosaz.com:8080/v1/graphql", {
+  const response = await fetch("https://sabberdev.hasura.app/v1/graphql", {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
