@@ -1,25 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
-import { useQuery } from '@tanstack/react-query';
-import { useRouter } from 'next/router';
-import React from 'react';
-import { userProfile } from '../../hooks/useFetch';
-import ImageCo from '../../components/main/ImageCo';
-import Link from 'next/link';
-import { PostProps } from '../../types/MainTypes';
-import TabBar from '../../components/TabBar';
+import { useQuery } from "@tanstack/react-query";
+import { useRouter } from "next/router";
+import React from "react";
+import { userProfile } from "../../hooks/useFetch";
+import ImageCo from "../../components/main/ImageCo";
+import Link from "next/link";
+import { PostProps } from "../../types/MainTypes";
+import TabBar from "../../components/TabBar";
 
 const UserProfile = () => {
   const router = useRouter();
   const { id } = router.query;
   const { data, isLoading } = useQuery<PostProps[]>(
-    ['useasdrProasdasfile', id],
+    ["useasdrProasdasfile", id],
     () => userProfile(parseInt(id as string))
   );
   if (isLoading) return null;
   console.log(data);
   return (
     <div className="w-screen flex flex-col items-center justify-center">
-      <div className="w-screen relative h-48 bg-green-800 flex flex-row items-center justify-between">
+      {/* <div className="w-screen relative h-48 bg-green-800 flex flex-row items-center justify-between">
         <ImageCo
           src="https://res.cloudinary.com/dh6sxfevk/image/upload/v1665230280/c9f01cf18f678e804c5ba1cde4aadf79_hcrb5f.jpg"
           w="w-full"
@@ -28,7 +28,7 @@ const UserProfile = () => {
         <div className="absolute w-full h-48 flex flex-col justify-center">
           <div className="z-40 flex flex-col items-center mr-5">
             <img
-              src={data?.[0].owner?.img}
+              src={data}
               alt=""
               className="w-24 h-24 rounded-full"
             />
@@ -60,7 +60,7 @@ const UserProfile = () => {
             </a>
           </Link>
         ))}
-      </div>
+      </div> */}
       <TabBar />
     </div>
   );

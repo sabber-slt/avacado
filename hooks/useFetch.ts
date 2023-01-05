@@ -132,19 +132,19 @@ export const fetchPublicPosts = async () => {
     },
     body: JSON.stringify({
       query: `
-      query MyQuery {
-        posts(limit: 20, order_by: {id: desc}) {
-          body
+      query GetDoctors {
+        doctors {
           id
-          img
-          like
-          owner {
-            img
-            name
-            id
-          }
-          title
-          user_id
+          likes
+          content1
+          content2
+          edu
+          image
+          media1
+          media2
+          name
+          title1
+          title2
         }
       }
       
@@ -154,7 +154,7 @@ export const fetchPublicPosts = async () => {
 
   const { data } = await response.json();
 
-  return data.posts;
+  return data.doctors;
 };
 
 export const fetchCategories = async () => {

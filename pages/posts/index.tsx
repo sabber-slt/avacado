@@ -1,18 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import { useQuery } from '@tanstack/react-query';
-import Link from 'next/link';
-import { fetchPublicPosts } from '../../hooks/useFetch';
-import { useRouter } from 'next/router';
-import { PostProps } from '../../types/MainTypes';
-import TabBar from '../../components/TabBar';
-import PostsAnim from '../../components/animations/PostsAnim';
-import Container from '../../components/Container';
+import React from "react";
+import { useQuery } from "@tanstack/react-query";
+import Link from "next/link";
+import { fetchPublicPosts } from "../../hooks/useFetch";
+import { useRouter } from "next/router";
+import { PostProps } from "../../types/MainTypes";
+import TabBar from "../../components/TabBar";
+import PostsAnim from "../../components/animations/PostsAnim";
+import Container from "../../components/Container";
 
 const Home = () => {
   const router = useRouter();
   const { data, isLoading } = useQuery<PostProps[]>(
-    ['fetchPublicPosts'],
+    ["fetchPublicPosts"],
     fetchPublicPosts
   );
   if (isLoading) {
@@ -29,41 +29,44 @@ const Home = () => {
           >
             <Link
               href={{
-                pathname: '/posts/userProfile',
+                pathname: "/posts/userProfile",
                 query: {
-                  id: post?.owner?.id,
+                  id: post.id,
                 },
               }}
             >
               <a className="w-full flex flex-row items-center justify-end ">
-                <p className="pl-2">{post?.owner?.name}</p>
+                <p className="pl-2">{post?.name}</p>
                 <img
-                  src={post?.owner?.img}
+                  src={post?.image}
                   alt=""
                   className="w-14 h-14 rounded-full object-cover ml-2 mb-2"
                 />
               </a>
             </Link>
             <img
-              src={post?.img}
+              src={post?.media1}
               alt=""
               className="w-full lg:w-[40vw] h-64 object-cover"
             />
 
             <p className="text-right pt-2 px-3">
-              {post?.body?.slice(0, 70)}...{' '}
+              {post?.content1?.slice(0, 70)}...{" "}
               <span>
                 <button
                   onClick={() =>
                     router.push({
-                      pathname: '/posts/post',
+                      pathname: "/posts/post",
                       query: {
-                        profileImg: post?.owner?.img,
-                        name: post?.owner?.name,
-                        body: post?.body,
-                        img: post?.img,
+                        image: post?.image,
+                        name: post?.name,
+                        content1: post?.content1,
+                        content2: post?.content2,
                         id: post?.id,
-                        owner_id: post?.owner?.id,
+                        media1: post?.media1,
+                        media2: post?.media2,
+                        title1: post?.title1,
+                        title2: post?.title2,
                       },
                     })
                   }

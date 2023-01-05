@@ -16,7 +16,7 @@ const Section = () => {
             menu === "posts" ? "text-green-600" : "text-zinc-500"
           } flex flex-col items-center justify-center`}
         >
-          پست ها
+          برنامه ها
         </button>
         <button
           onClick={() => setMenu("message")}

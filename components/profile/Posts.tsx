@@ -34,10 +34,12 @@ const Posts = () => {
     <div>
       {data?.length === 0 ? (
         <div className="w-full h-80 bg-white flex flex-col items-center justify-center">
-          <p className="text-xl text-zinc-500">هنوز مطلبی ثبت نکرده اید</p>
-          <Link href="/profile/createPost">
+          <p className="text-xl text-zinc-500">
+            هنوز برنامه ای برای ثبت نکرده اید
+          </p>
+          <Link href="/home">
             <a className="text-slate-100 px-3 py-2 bg-[#5AAC46] rounded-md mt-3">
-              ثبت مطلب
+              درخواست برنامه
             </a>
           </Link>
         </div>

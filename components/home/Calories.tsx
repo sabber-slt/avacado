@@ -42,15 +42,15 @@ const Calories = () => {
   }, [food, value]);
   return (
     <div className="w-full flex flex-row items-center justify-around">
-      <div className="w-20 h-20 bg-zinc-100 bg-opacity-80 flex flex-col items-center justify-around py-3 rounded-full">
+      <div className="w-20 h-20 bg-zinc-100 bg-opacity-80 flex flex-col items-center justify-around py-3 rounded-lg">
         <p className="text-zinc-500">کالری امروز</p>
         <p className="text-zinc-500 text-lg">{cal} </p>
       </div>
-      <div className="w-20 h-20 bg-zinc-100 bg-opacity-80 flex flex-col items-center justify-around py-3 rounded-full">
+      <div className="w-20 h-20 bg-zinc-100 bg-opacity-80 flex flex-col items-center justify-around py-3 rounded-lg">
         <p className="text-zinc-500">پروتیین امروز</p>
         <p className="text-zinc-500 text-lg">{pro} </p>
       </div>
-      <div className="w-20 h-20 bg-zinc-100 bg-opacity-80 flex flex-col items-center justify-around py-3 rounded-full">
+      <div className="w-20 h-20 bg-zinc-100 bg-opacity-80 flex flex-col items-center justify-around py-3 rounded-lg">
         <p className="text-zinc-500">فیبر امروز</p>
         <p className="text-zinc-500 text-lg">{fibr} </p>
       </div>

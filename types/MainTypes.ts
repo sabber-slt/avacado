@@ -10,15 +10,15 @@ export interface MagazineProps {
 }
 
 export interface PostProps {
-  body: string;
+  likes: number;
   id: number;
-  img: string;
-  like: number;
-  owner: {
-    name: string;
-    img: string;
-    id: number;
-  };
-  title: string;
-  user_id: number;
+  content1: string;
+  content2: string;
+  edu: string;
+  image: string;
+  media1: string;
+  media2: string;
+  name: string;
+  title1:string
+  title2:string
 }
